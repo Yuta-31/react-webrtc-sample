@@ -1,7 +1,7 @@
 import React from 'react';
 import './Video.css';
 
-export default function VideoView() {
+export default function VideoConnect() {
   const localVideoRef = React.useRef(null);
   const remoteVideoRef = React.useRef(null);
   const constraints = {
@@ -46,7 +46,6 @@ export default function VideoView() {
       .catch(() => {
         console.log("LocalPeerConnection Failure");
       })
-
     remotePeerConnection.setRemoteDescription(description)
       .then(() => {
         console.log("RemotePeerConnection Success");
@@ -54,7 +53,6 @@ export default function VideoView() {
       .catch(() => {
         console.log("RemotePeerConnection Failure");
       })
-
     remotePeerConnection.createAnswer()
       .then(createdAnswer)
       .catch(() => {

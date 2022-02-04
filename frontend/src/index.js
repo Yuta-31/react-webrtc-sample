@@ -5,10 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import VideoConnect from './VideoConnect';
+import VideoConnect2 from './VideoConnect2';
 
 ReactDOM.render(
   <React.StrictMode>
-    <VideoConnect />
+    <VideoConnect2 />
   </React.StrictMode>,
   document.getElementById('root')
 );

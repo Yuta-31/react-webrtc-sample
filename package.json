@@ -2,14 +2,24 @@
   "name": "web-rtc",
   "version": "1.0.0",
   "description": "",
-  "main": "crypt.js",
+  "main": "backend/index.js",
+  "dependencies": {
+    "express": "^4.17.2",
+    "socket.io": "^4.4.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yuta-31/react-webrtc-sample.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "crypto": "^1.0.1"
-  }
+  "bugs": {
+    "url": "https://github.com/Yuta-31/react-webrtc-sample/issues"
+  },
+  "homepage": "https://github.com/Yuta-31/react-webrtc-sample#readme"
 }
