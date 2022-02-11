@@ -186,7 +186,7 @@ export default function VideoConnect4() {
   return (
     <div className="VideoView">
       <Stack spacing={2}>
-        <Grid container alignItems="center" justify="center">
+        <Grid container alignItems="center" justifyContent="center">
           <Grid item xs>
             <Card sx={{ width: 400, height: 200 }}>
               <CardMedia component="video" playsInline autoPlay ref={localVideoRef} />
