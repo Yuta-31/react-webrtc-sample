@@ -183,20 +183,20 @@ export default function VideoConnect4() {
 
   return (
     <div className="VideoView">
-      <Grid container spacing={2}>
-        <Grid item xs={6}>
-          <video playsInline autoPlay ref={localVideoRef} />
+      <Stack spacing={2}>
+        <Grid container spacing={2}>
+          <Grid item xs={6}>
+            <video playsInline autoPlay ref={localVideoRef} />
+          </Grid>
+          <Grid item xs={6}>
+            <video playsInline autoPlay ref={remoteVideoRef} />
+          </Grid>
         </Grid>
-        <Grid item xs={6}>
-          <video playsInline autoPlay ref={remoteVideoRef} />
-        </Grid>
-        <Grid item xs={12}>
-          <Stack spacing={2} direction="row">
-            <Button variant="contained" onClick={allowJoin} disabled={!isKnocking}>ALLOW</Button>
-            <Button variant="contained" onClick={calling} disabled={!canCalling}>CALL</Button>
-          </Stack>
-        </Grid>
-      </Grid>
+        <Stack spacing={2} direction="row">
+          <Button variant="contained" onClick={allowJoin} disabled={!isKnocking}>ALLOW</Button>
+          <Button variant="contained" onClick={calling} disabled={!canCalling}>CALL</Button>
+        </Stack>
+      </Stack>
     </div>
   )
 }
