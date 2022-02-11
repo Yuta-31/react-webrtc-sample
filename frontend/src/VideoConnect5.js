@@ -198,7 +198,7 @@ export default function VideoConnect4() {
         </Grid>
         <Grid item xs>
           <Card sx={{ width: 400, height: 225 }}>
-            <CardMedia component="video" playsInline autoPlay ref={remoteVideoRef} />
+            <CardMedia sx={{ height: 225 }} component="video" playsInline autoPlay ref={remoteVideoRef} />
           </Card>
         </Grid>
       </Grid>
