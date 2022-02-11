@@ -1,7 +1,8 @@
 import React from 'react';
 import './Video.css';
 import socketClient from 'socket.io-client';
-import { Button, Stack } from '@mui/material'
+import { Button, Stack, Paper } from '@mui/material';
+import { styled } from '@mui/material/styles';
 
 const SERVER = "https://webrtcreact.herokuapp.com";
 
@@ -17,6 +18,14 @@ const constraints = {
 const offerOptions = {
   offerToReceiveVideo: 1,
 }
+
+const Item = styled(Paper)(({ theme }) => ({
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
+}));
+
 
 var localStream = null;
 var remoteStream = null;
