@@ -194,10 +194,14 @@ export default function VideoConnect4() {
             <video playsInline autoPlay ref={remoteVideoRef} />
           </Grid>
         </Grid>
-        <Stack spacing={2} direction="row">
-          <Button variant="contained" onClick={allowJoin} disabled={!isKnocking}>ALLOW</Button>
-          <Button variant="contained" onClick={calling} disabled={!canCalling}>CALL</Button>
-        </Stack>
+        <Grid container spcaing={2}>
+          <Grid item xs>
+            <Button variant="contained" onClick={allowJoin} disabled={!isKnocking}>ALLOW</Button>
+          </Grid>
+          <Grid item xs>
+            <Button variant="contained" onClick={calling} disabled={!canCalling}>CALL</Button>
+          </Grid>
+        </Grid
       </Stack>
     </div>
   )
