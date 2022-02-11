@@ -4,12 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import VideoConnect from './VideoConnect';
-import VideoConnect2 from './VideoConnect2';
+import VideoConnect3 from './VideoConnect3';
 
 ReactDOM.render(
   <React.StrictMode>
-    <VideoConnect2 />
+    <VideoConnect3 />
   </React.StrictMode>,
   document.getElementById('root')
 );
