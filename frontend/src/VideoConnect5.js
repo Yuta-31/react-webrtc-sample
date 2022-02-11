@@ -201,7 +201,7 @@ export default function VideoConnect4() {
           <Grid item xs>
             <Button variant="contained" onClick={calling} disabled={!canCalling}>CALL</Button>
           </Grid>
-        </Grid
+        </Grid>
       </Stack>
     </div>
   )
