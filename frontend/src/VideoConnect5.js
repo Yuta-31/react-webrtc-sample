@@ -1,7 +1,7 @@
 import React from 'react';
 import './Video.css';
 import socketClient from 'socket.io-client';
-import { Button, Stack, Grid } from '@mui/material';
+import { Button, Stack, Grid, Card, CardMedia } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 const SERVER = "https://webrtcreact.herokuapp.com";
@@ -188,7 +188,9 @@ export default function VideoConnect4() {
       <Stack spacing={2}>
         <Grid container spcing={2}>
           <Grid item xs>
-            <video playsInline autoPlay ref={localVideoRef} />
+            <Card>
+              <CardMedia component="video" playsInline autoPlay ref={localVideoRef} />
+            </Card>
           </Grid>
           <Grid xs>
             <video playsInline autoPlay ref={remoteVideoRef} />
