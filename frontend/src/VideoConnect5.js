@@ -1,7 +1,7 @@
 import React from 'react';
 import './Video.css';
 import socketClient from 'socket.io-client';
-import { Button, Stack, Item } from '@mui/material'
+import { Button, Stack } from '@mui/material'
 
 const SERVER = "https://webrtcreact.herokuapp.com";
 
