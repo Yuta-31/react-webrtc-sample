@@ -187,7 +187,7 @@ export default function VideoConnect4() {
         <Grid item xs={6}>
           <video playsInline autoPlay ref={localVideoRef} />
         </Grid>
-        <Gird item xs={6}>
+        <Grid item xs={6}>
           <video playsInline autoPlay ref={remoteVideoRef} />
         </Grid>
         <Grid item xs={12}>
