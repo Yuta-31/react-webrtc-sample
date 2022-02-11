@@ -183,8 +183,10 @@ export default function VideoConnect4() {
 
   return (
     <div className="VideoView">
-      <video playsInline autoPlay ref={localVideoRef} />
-      <video playsInline autoPlay ref={remoteVideoRef} />
+      <Stack spcing={2} direction="row">
+        <video playsInline autoPlay ref={localVideoRef} />
+        <video playsInline autoPlay ref={remoteVideoRef} />
+      </Stack>
       <br />
       <Stack spacing={2} direction="row">
         <Button variant="contained" onClick={allowJoin} disabled={!isKnocking}>ALLOW</Button>
