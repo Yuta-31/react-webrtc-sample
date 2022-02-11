@@ -186,7 +186,7 @@ export default function VideoConnect4() {
   return (
     <div className="VideoView">
       <Stack spacing={2}>
-        <Grid container spcing={2}>
+        <Grid container spcing={2} alignItems="center" justify="center">
           <Grid item xs>
             <Card sx={{ width: 400, height: 200 }}>
               <CardMedia component="video" playsInline autoPlay ref={localVideoRef} />
@@ -198,12 +198,10 @@ export default function VideoConnect4() {
             </Card>
           </Grid>
         </Grid>
-        <center>
-          <Stack spacing={2} direction="row">
-            <Button variant="contained" onClick={allowJoin} disabled={!isKnocking}>ALLOW</Button>
-            <Button variant="contained" onClick={calling} disabled={!canCalling}>CALL</Button>
-          </Stack>
-        </center>
+        <Stack spacing={2} direction="row">
+          <Button variant="contained" onClick={allowJoin} disabled={!isKnocking}>ALLOW</Button>
+          <Button variant="contained" onClick={calling} disabled={!canCalling}>CALL</Button>
+        </Stack>
       </Stack>
     </div>
   )
