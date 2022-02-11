@@ -19,14 +19,6 @@ const offerOptions = {
   offerToReceiveVideo: 1,
 }
 
-const Item = styled(Paper)(({ theme }) => ({
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: 'center',
-  color: theme.palette.text.secondary,
-  elevation: 0,
-}));
-
 
 var localStream = null;
 var remoteStream = null;
@@ -195,8 +187,8 @@ export default function VideoConnect4() {
     <div className="VideoView">
       <Stack spacing={2}>
         <Stack direction="row" spcing={2}>
-          <Item><video playsInline autoPlay ref={localVideoRef} /></Item>
-          <Item><video playsInline autoPlay ref={remoteVideoRef} /></Item>
+          <video playsInline autoPlay ref={localVideoRef} />
+          <video playsInline autoPlay ref={remoteVideoRef} />
         </Stack>
         <Stack spacing={2} direction="row">
           <Button variant="contained" onClick={allowJoin} disabled={!isKnocking}>ALLOW</Button>
