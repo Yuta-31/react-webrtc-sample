@@ -1,7 +1,7 @@
 import React from 'react';
 import './Video.css';
 import socketClient from 'socket.io-client';
-import { Button, Stack, Paper } from '@mui/material';
+import { Button, Stack, Grid } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 const SERVER = "https://webrtcreact.herokuapp.com";
@@ -186,10 +186,14 @@ export default function VideoConnect4() {
   return (
     <div className="VideoView">
       <Stack spacing={2}>
-        <Stack direction="row" spcing={2}>
-          <video playsInline autoPlay ref={localVideoRef} />
-          <video playsInline autoPlay ref={remoteVideoRef} />
-        </Stack>
+        <Grid container spcing={2}>
+          <Grid item xs>
+            <video playsInline autoPlay ref={localVideoRef} />
+          </Grid>
+          <Grid xs>
+            <video playsInline autoPlay ref={remoteVideoRef} />
+          </Grid>
+        </Grid>
         <Stack spacing={2} direction="row">
           <Button variant="contained" onClick={allowJoin} disabled={!isKnocking}>ALLOW</Button>
           <Button variant="contained" onClick={calling} disabled={!canCalling}>CALL</Button>
