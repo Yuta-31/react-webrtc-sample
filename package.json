@@ -5,6 +5,7 @@
   "main": "backend/index.js",
   "dependencies": {
     "express": "^4.17.2",
+    "path": "^0.12.7",
     "socket.io": "^4.4.1"
   },
   "scripts": {
