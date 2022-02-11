@@ -7,7 +7,9 @@ import VideoConnect5 from './VideoConnect5';
 
 ReactDOM.render(
   <React.StrictMode>
-    <VideoConnect5 />
+    <center>
+      <VideoConnect5 />
+    </center>
   </React.StrictMode>,
   document.getElementById('root')
 );
