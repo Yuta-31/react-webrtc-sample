@@ -168,6 +168,7 @@ export default function VideoConnect4() {
       .catch((error) => {
         console.log("ERROR", error);
       });
+    const adapterScript = document.createElement('script');
     adapterScript.src = "https://webrtc.github.io/adapter/adapter-latest.js";
     adapterScript.async = true;
     document.body.appendChild(adapterScript);
