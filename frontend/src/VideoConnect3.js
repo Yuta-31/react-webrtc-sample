@@ -31,7 +31,7 @@ let config = {
 };
 
 
-export default function VideoConnect2() {
+export default function VideoConnect3() {
   const localVideoRef = React.useRef(null);
   const remoteVideoRef = React.useRef(null);
   const [isKnocking, setIsKnocking] = React.useState(false);
