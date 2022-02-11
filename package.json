@@ -2,7 +2,7 @@
   "name": "web-rtc",
   "version": "1.0.0",
   "description": "",
-  "main": "backend/index.js",
+  "main": "backend/index-heroku.js",
   "dependencies": {
     "express": "^4.17.2",
     "path": "^0.12.7",
