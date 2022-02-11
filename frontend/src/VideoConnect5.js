@@ -188,7 +188,7 @@ export default function VideoConnect4() {
         <Grid item xs>
           <div>
             <Card sx={{ width: 400, height: 280 }}>
-              <CardMedia component="video" playsInline autoPlay ref={localVideoRef} />
+              <CardMedia sx={{ height: 225 }} component="video" playsInline autoPlay ref={localVideoRef} />
               <CardActions>
                 <Button variant="contained" onClick={calling} disabled={!canCalling}>CALL</Button>
                 <Button variant="contained" onClick={allowJoin} disabled={!isKnocking}>ALLOW</Button>
@@ -197,7 +197,7 @@ export default function VideoConnect4() {
           </div>
         </Grid>
         <Grid item xs>
-          <Card sx={{ width: 400, height: 200 }}>
+          <Card sx={{ width: 400, height: 225 }}>
             <CardMedia component="video" playsInline autoPlay ref={remoteVideoRef} />
           </Card>
         </Grid>
